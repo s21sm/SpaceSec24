@@ -203,7 +203,7 @@ for i in range(N):
   N_payload_final.extend(full_msg)
 
 # wiritng the file
-file_dump("PLB.iq8s",N_payload_final)  ## for HackRF in iq8s format ##
+file_dump("PLB.iq8s",N_payload_final)  ## for HackRF in BPSK format ##
 
 arr =[]
 load = full_msg_without_radio_stuff
