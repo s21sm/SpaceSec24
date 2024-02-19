@@ -18,7 +18,7 @@ import numpy as np
 from scipy.io import wavfile
 import matplotlib.pyplot as plt
 
-with wave.open('recorded.wav', 'rb') as wav_file:
+with wave.open('example/audio.wav', 'rb') as wav_file:
     # Get the audio file's properties
     channels = wav_file.getnchannels()
     sample_width = wav_file.getsampwidth()
