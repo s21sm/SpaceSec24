@@ -111,7 +111,7 @@ class EPIRB:
 
 shared_key = b'\r\xa1\x14&\x1d>\xbaIw\x82\x94\x11\xaa\x1a\xa5\x88\xa7\xef\xaf\x1ab\x17\xd6\xbbm\xc6KZ/\xe7vh'
 
-# Here is the example of a EPIRB long message. 24 bits RF prerequisite + 120 bit payload = 144bit message.
+
 hexdata = "90127B92922BC02B4968F58450220B"
 scale = 16 ## equals to hexadecimal
 num_of_bits = len(hexdata)*4
@@ -154,7 +154,7 @@ So the country code of Finland would be 0011100110. And the same rule applies to
 country_code = "0100000101"
 
 protocol_type="0111"
-# protocol_type 0010 = EPIRB, 0011 = ELT, 0111 = PLB
+
 
 ################## Start of RF stuffs ########################
 bits_per_second = 400
@@ -164,7 +164,7 @@ bit_syn = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 frame_syn_test = [0,1,1,0,1,0,0,0,0]
 ################## END of RF stuffs ########################
 
-# how many messages needed? we are generating 10 messages, aiming DoS attack
+
 N = 1
 N_payload_final = bytearray(0)
 
@@ -203,8 +203,9 @@ for i in range(N):
   N_payload_final.extend(full_msg)
 
 # wiritng the file
-file_dump("PLB.iq8s",N_payload_final)  ## for HackRF in BPSK format ##
+file_dump("PLB",N_payload_final)  ## for HackRF in BPSK format ##
 
+### This part is for generating .wav file ###
 arr =[]
 load = full_msg_without_radio_stuff
 high = [127]*60
