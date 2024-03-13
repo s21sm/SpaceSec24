@@ -7,7 +7,6 @@
 - [About](#about)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
 
 ## About
 
@@ -21,4 +20,5 @@ These instructions will get you a copy of the project up and running on your loc
 
 - Python 3
 - GNU Radio Companion
+- EPIRB plotter
 
