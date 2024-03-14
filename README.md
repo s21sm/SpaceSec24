@@ -34,7 +34,7 @@ Using encoder.py, there are two ways to encode the data for transmission: one fo
 To transmit the signal, you will need a HackRF (it is tested with HackRF, however, with some adjustment other SDRs e.g., Pluto, USRP, BladeRF may also work). If you're using the BPSK format, use the "BPSK_mode.grc" file; if you're using the WAV format, use the "NFM_mode.grc" file. It's very straightforward: simply select the desired file. Optionally, you can adjust the transmission gain, frequency, etc.
 
 ## Signal Receiption
-Tune the transmission frequency. Choose the NFM mode in SDR Sharp software to ensure accurate audio. Route the audio to the EPIRB plotter using a virtual audio cable. Alternatively, you can record the audio for later processing. If you receive a signal from a satellite, you may need to use the Doppler correction library in SDR Sharp to correct the Doppler shift.
+Tune the transmission frequency. Choose the NFM mode in SDR Sharp software to ensure accurate audio. Feed the audio to the EPIRB plotter using a virtual audio cable. Alternatively, you can record the audio for post processing. If you receive a signal from a satellite, you may need to use the Doppler correction library in SDR Sharp to correct the Doppler shift.
 
 ## Verification
 The EPIRB plotter will display the decoded data. Alternatively, we have provided the verification.py script to verify the MAC. Please note that we used a 48K sampling rate in audio recording. If you recorded the audio using a different sampling rate, you may need to either resample it to 48K or change the source code for the proper sample rate to match Manchester encoding.
