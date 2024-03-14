@@ -9,7 +9,7 @@
 - [Encoding](#encoding)
 - [Signal Transmission](#signal-transmission)
 - [Signal Receiption](#signal-receiption)
-- [Decoding](#decoding)
+- [Verification](#verification)
 
 ## About
 
