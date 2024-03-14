@@ -1,6 +1,6 @@
 # SpaceSec24
 
-[SpaceSec24] - COSPAS Search and Rescue Satellite Uplink: A MAC-Based  Security Enhancement
+COSPAS Search and Rescue Satellite Uplink: A MAC-Based  Security Enhancement
 
 ## Table of Contents
 
